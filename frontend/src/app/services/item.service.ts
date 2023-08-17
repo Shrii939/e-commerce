@@ -8,8 +8,14 @@ import { Item_Array } from 'src/data';
 export class ItemService {
 
   constructor() { }
+  
   getAll():Item[] {
     return Item_Array;
   }
+
+  getAllFoodsBySearchTerm(searchTerm:string){
+    return this.getAll().filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  }
+
 
 }

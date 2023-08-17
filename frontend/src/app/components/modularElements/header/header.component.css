@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    border-radius: 50rem;
   }
   
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);*/  /* /* uncomment if you want background for your header  */ 
     padding: 0.625rem 1rem; /* 10px 16px */
     max-width: 1460px; /* Added max-width */
     margin: 0 auto; /* Center align the container */
@@ -57,12 +58,7 @@
     margin-left: auto;
   }
   
-  input[type="text"] {
-    padding: 0.275rem; /* 6px */
-    border: 0.0625rem solid #ccc; /* 1px */
-    border-radius: 1.25rem; /* 20px */
-    font-size: 1.2rem;
-  }
+
   
   button {
     padding: 0.375rem 0.75rem; /* 6px 12px */

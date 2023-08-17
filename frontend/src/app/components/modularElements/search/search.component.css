@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border-radius: 10rem 0 0 10rem;
+    border: none;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    outline: none; /* Remove the default outline */
+}
+
+button {
+    border-radius: 0 10rem 10rem 0;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background-color: #0ba006;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style for the input element with type="text" */
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    transition: border-color 0.3s; /* Add a smooth transition for border color */
+}
+
+/* Style the input element when focused */
+input[type="text"]:focus {
+    border-color: #0ba006; /* Change border color on focus */
+}
