@@ -1,1 +1,24 @@
-<p>home works!</p>
+<ul>
+    <li *ngFor="let item of Items">
+        <a routerLink="/itms/{{item.id}}">
+            <img [src]="item.imageUrl" [alt]="item.imageUrl">
+            <div class="content">
+                <div class="name">
+                    {{item.name}}
+                </div>
+                <div class="tags">
+                    <span *ngFor="let tag of item.tags">
+                            {{tag}}
+                    </span>
+                </div>
+                <div class="price">
+                    {{item.price | currency:"INR"}}
+                </div>
+                <span class="favourate {{item.favorite ? '' : 'not'}}"> 
+                    <!-- <i class="fa fa-heart" (click)="toggleFavorite(item)"></i> -->
+                    ❤
+                </span>
+            </div>
+        </a>
+    </li>
+</ul>
