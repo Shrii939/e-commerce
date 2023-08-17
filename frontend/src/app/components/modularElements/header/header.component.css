@@ -1,0 +1,118 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 0.625rem 1rem; /* 10px 16px */
+    max-width: 1460px; /* Added max-width */
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 1.85rem; /* 28px */
+    font-weight: bold;
+    color: black;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; /* 20px */
+    width: 100%;
+    padding-left: 1rem; /* 16px */
+  }
+  
+  .menu-list,
+  .user-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem; /* 20px */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-list li ,
+  .user-menu li {
+    font-size: 1.2rem; /* 18px */
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 1rem; /* Increased gap between logo and menu items */
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  input[type="text"] {
+    padding: 0.275rem; /* 6px */
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 1.25rem; /* 20px */
+    font-size: 1.2rem;
+  }
+  
+  button {
+    padding: 0.375rem 0.75rem; /* 6px 12px */
+    font-size: 1rem; /* 16px */
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: royalblue;
+  }
+  
+  /* New styles based on your requirements */
+  .menu-list li a,
+  .user-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem; /* 8px */
+  }
+  
+  .user-menu button {
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
+  
+  .user-menu button:hover {
+    background-color: transparent;
+    color: royalblue;
+    text-decoration: underline;
+  }
+
+
+  a:hover{
+    color:rgb(238, 191, 62);
+  }
+
+
+  /* Media query for screens less than 824px */
+  @media (max-width: 824px) {
+    .navbar {
+      display: none;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
